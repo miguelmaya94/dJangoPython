@@ -5,7 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('hello/', views.say_hello),
+    path('index/', views.say_hello),
 
     path('join/', views.join, name='join'),
       

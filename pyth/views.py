@@ -6,7 +6,7 @@ from .forms import MemberForm
 # Create your views here.
 def say_hello(request):
     all_members = Members.objects.all
-    return render(request, 'hello.html', {'all':all_members})
+    return render(request, 'index.html', {'all':all_members})
 
 def join(request):
     if request.method == "POST":
