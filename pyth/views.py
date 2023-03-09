@@ -1,9 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Members
+from django.views import generic
 from .forms import MemberForm
 
 # Create your views here.
+class IndexView(generic.ListView):
+    template_name = 'pyth/index.html'
+   
+
 def say_hello(request):
     all_members = Members.objects.all
     return render(request, 'index.html', {'all':all_members})
