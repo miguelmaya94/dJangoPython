@@ -5,9 +5,7 @@ from django.views import generic
 from .forms import MemberForm
 
 # Create your views here.
-class IndexView(generic.ListView):
-    template_name = 'pyth/index.html'
-   
+
 
 def say_hello(request):
     all_members = Members.objects.all
