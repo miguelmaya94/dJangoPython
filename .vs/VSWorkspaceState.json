@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\pyth",
+    "\\pyth\\templates"
   ],
+  "SelectedNode": "\\pyth\\templates\\index.html",
   "PreviewInSolutionExplorer": false
 }
