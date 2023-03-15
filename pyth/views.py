@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Members
+from django.views import generic
 from .forms import MemberForm
 
 # Create your views here.
 
-   
 
 def say_hello(request):
     all_members = Members.objects.all
@@ -13,7 +13,7 @@ def say_hello(request):
 
 def join(request):
     if request.method == "POST":
-        form = MemberForm(request.POST or 'NONE')
+        form = MemberForm(request.POST or NONE)
         if form.is_valid():
             form.save()
         return render(request, 'join.html', {})
