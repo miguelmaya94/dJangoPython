@@ -19,3 +19,6 @@ def join(request):
         return render(request, 'join.html', {})
     else:
         return render(request, 'join.html', {})
+    
+def joins(request):
+      return render(request, 'join.html')

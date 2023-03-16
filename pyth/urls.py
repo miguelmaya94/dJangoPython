@@ -7,9 +7,12 @@ from django.conf.urls.static import static
 app_name='pyth'
 urlpatterns = [
   
-    path('index/', views.say_hello),
+    path('', views.say_hello, name='home'),
 
     path('join/', views.join, name='join'),
+    
+   
+    path('join/', views.join, name='second'),
       
     
 
