@@ -27,31 +27,20 @@
       }
     </style>
 </head>
-  <body>
-      
-      
-      
+  <body> 
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="index.html">Python Web Development</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href='second'>Home <span class="sr-only">(current)</span></a>
       </li>
-      
-      
-  
-      
         <li class="nav-item">
         <a class="nav-link" href="index">Retrieve table</a>
       </li>
-    
-      
-   
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -67,7 +56,6 @@
     </form>
   </div>
 </nav>
-
       <main role="main">
            <br><>
           
@@ -77,34 +65,21 @@
       <p>This is a template for a simple marketing or informational website. It includes Python, Visual Code IDE, JDK, Apache Tomcat, JSTL, Servelt API, MYSQL content. Use it to upload wine names to a database and retrieve it.</p>
       <p><a class="btn btn-primary btn-lg" href="https://www.mayandmiguel.com" role="button">Learn more &raquo;</a></p>
     </div>
-  </div>
-          
-          
+  </div>      
 <br><br>
  <img src="{% static 'media/Girl.jpg' %}">
-
 {% block content%}
  <h1>Members database</h1>
  {%for item in all %}
-
  {{ item.fname }}  {{ item.lname }}</br> 
   Email: {{ item.email }}</br>
   Age: {{ item.age }}
   <hr>
-
-
  {% endfor %}
  {% endblock %}
 <br><br>
-
-
-
 </main>
-
-      
-      
-     
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -113,8 +88,3 @@
     <p>&copy; MockCompany 2023 Maya Multimedia LLC</p>
 </footer>
 </html>
-
-
-
-
-
